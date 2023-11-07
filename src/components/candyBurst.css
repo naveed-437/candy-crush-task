@@ -1,0 +1,72 @@
+/* CandyBurst.css */
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; 
+    justify-content: center;
+    /* Set background color as needed */
+  }
+.App{
+  background: rgb(218, 255, 196);
+}
+  .ad{
+    text-align: center;
+    background: linear-gradient(to right, violet, indigo, blue, green, rgb(255, 0, 140), orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .container {
+    text-align: center;
+  }
+.candy-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap:2px;
+    
+  }
+  
+  .candy-row {
+    display: grid;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .candy {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-right: 1px;
+  }
+  
+  /* Define styles for different candy colors */
+  .candy.red {
+    background-color: #ff5555;
+  }
+  
+  .candy.green {
+    background-color: #55ff55;
+  }
+  
+  .candy.blue {
+    background-color: #5555ff;
+  }
+  .gap{
+    margin-bottom: 15px;
+  }
+  @media (max-width: 400px) {
+    .candy-grid {
+      grid-template-columns: repeat(10, 30px); 
+      /* Adjust the number of columns for smaller screens */
+    }
+  
+    .candy {
+      width: 30px; /* Adjust candy size for smaller screens */
+      height: 30px;
+      margin-right: 1px; /* Adjust margin for smaller screens */
+    }
+  }
+  /* Add more styles as needed for additional candy colors */
+  
